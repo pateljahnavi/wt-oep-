@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Kesari</title>
+    <link rel="stylesheet" type="text/css" href="cssfile.css">
+    <link rel="stylesheet" type="text/css" href="styling_header.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body style="background-color: lightgray; width: 100%;">
+    
+    <f1><center><font size="30"><b>KESARI(HINDI)</b></font></center></f1>
+    <br>
+    <img src="kesari.jpg" alt="Kesari" width="850" height="450">
+    <br>
+    <center>
+        <table>
+            <tr>
+                <th><button class="button button1">Drama</button></th>
+                <th><button class="button button1">War</button></th>
+                <th><button class="button button1">History</button></th>
+            </tr>
+        </table>
+        <h3><b>Summary</b></h3>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JFP24D15_XM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+            <pre><h3><i>Time: 2 hr 30 min</i>
+
+        Set in the 19th century, Kesari recounts the story of Havildar Ishar Singh who played a key role in the 1897 Battle of 
+        Saragarhi,in which an army of 21 Sikhs fought against a legion of Afghans in what is considered as one of the greatest 
+        last-stands in military history.</h3></pre>
+
+            <h3><b>Cast & Crew</b></h3>
+            <br>
+
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="kesari_cast1.jpg" style="width:80%" height="45%">
+                <img class="mySlides" src="kesari_cast2.jpg" style="width:80%" height="45%>
+                <img class="mySlides" src="kesari_cast3.jpg" style="width:80%" height="45%">
+                <img class="mySlides" src="kesari_crew.jpg" style="width:80%" height="45%">
+                <img class="mySlides" src="kesari_crew1.jpg" style="width:80%" height="45%">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+            <br>
+            <br>
+
+         <button onclick="document.getElementById('id01').style.display='block'" class="book button2">Book Tickets</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p><h3>How many seats?<h3></p>
+     <select>
+     <option value="1">1</option>  
+      <option value="2">2</option>  
+   <option value="3">3</option>  
+<option value="4">4</option>  
+     <option value="5">5</option>  
+      <option value="6">6</option>  
+<option value="7">7</option> 
+<option value="8">8</option>  
+<option value="9">9</option>  
+<option value="10">10</option>  
+                  </select><br><br><br>
+<button onclick="theatre.html" class="book button2">Submit</button>
+      </div>
+    </div>
+  </div>
+            <br>
+            <br>
+
+        </center>
+
+</body>
+</html>

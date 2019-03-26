@@ -1,0 +1,61 @@
+body{
+    width: 100%;
+}
+.imgcenter{
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+column{
+    height: 100%;
+}
+.section{
+    height: 100%;
+}
+.filter{
+    position: absolute;
+    float: left;
+    color: black;
+    width: 20%;
+    height: 130%;
+    margin-top: 5px;
+    background-color: lightgray;
+    text-align: center;
+    border: solid 5px darkslategrey;
+    
+}
+.main{
+    position: absolute;
+    width: 76%;
+    right: 10px;
+    text-align: center;
+   /* padding-top: 20px;*/
+    margin: 5px;
+    height: 130%;
+    border: solid 5px darkslategrey;
+
+    background-color: lightgray;
+}
+.trending{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 450px;
+    text-align: center;
+    padding: 30px;
+     border-bottom: solid 2px black;
+}
+
+.new{
+    display: block;
+     padding: 30px;
+    position: absolute;
+    left: 20px;
+    top: 480px;
+    text-align: center;
+    font: 20px;
+    
+}
+

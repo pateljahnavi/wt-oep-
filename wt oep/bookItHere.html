@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>
+bookItHere
+</title>
+    <link rel="stylesheet" type="text/css" href="styling_header.css">
+    <link rel="stylesheet" type="text/css" href="section.css";>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body style="line-height: 2.0;
+    background-color: lightgray;">
+<header>
+    <div class="container">
+        <div id="name">
+           <h2>bookItHere</h2> 
+        </div>
+        <div id="search">
+        <form>
+            
+                    <input type="text" id="fname" placeholder="Search for your favourite movies">
+                   <input type="button" value="Search" id="bname">
+        </form>
+        </div>
+<div id="user">
+<a href="signup.html" target="_self">Sign up</a>&nbsp;/
+<a href="login.html">Sign-in</a>
+</div>  
+        <nav>
+            <ul>
+                <li><a href="#book">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!--adv-->
+
+<section>
+<div class="imgcenter" style="max-width: 1000px" >
+
+     <img class="mySlides" src="1.jpg" style="width:100%">
+
+     <img class="mySlides" src="2.jpg" style="width:100%">
+
+  	<img class="mySlides" src="3.jpg" style="width:100%">
+
+	<img class="mySlides" src="4.jpg" style="width:100%">
+
+	<img class="mySlides" src="5.jpg" style="width:100%">
+</div>
+<script>
+
+var myIndex = 0;
+
+adv();
+
+function adv() {
+
+  var i;
+
+  var x = document.getElementsByClassName("mySlides");
+
+  for (i = 0; i < x.length; i++) {
+
+    x[i].style.display = "none";  
+
+  }
+
+  myIndex++;
+
+  if (myIndex > x.length) {myIndex = 1}    
+
+  x[myIndex-1].style.display = "block";  
+
+  setTimeout(adv, 9000); // Change image every 9 seconds
+
+}
+
+</script>
+
+<!--adv over-->
+<div class="column">
+    <div class="filter">
+        <h2>Filters</h2>
+        <select class="genre">
+  <option>Genre</option>
+  <option value="Animation">Animation</option>
+  <option value="Comedy">Comedy</option>
+  <option value="Horror">Horror</option>
+</select> <br>
+        <select class="language">
+  <option>Language</option>
+  <option value="English">English</option>
+  <option value="Hindi">Hindi</option>
+</select> 
+        
+    </div>
+    </div>
+    </section>
+    <div class="main">
+    <h2 class="movies">Movies</h2><br>
+        <div class="trending">
+    <h2>Trending</h2>
+            <div class="movietrend">
+                <a href="captain_marvel.html">
+            <img src="cm.jpg" style="height: 300px; width: 300px; padding-left:10px; padding-right: 20px; "></a>
+                <a href="lukachhupi.html">
+             <img src="lc.jpg" style="height: 300px; width: 300px; padding-left:30px; padding-right: 20px;"></a>
+                <a href="tdhamal.html">
+             <img  src="td.jpg"style="height: 300px; width: 300px; padding-left:30px; padding-right: 10px;"></a>
+            </div>
+            
+        </div>
+        <div class="new">
+        <h2>Newly Arrived</h2>
+            <a href="badlamovie.html">
+             <img src="bd.jpg" style="height: 300px; width: 300px; padding-left:10px; padding-right: 20px; "></a>
+            <a href="captain_marvel.html">
+             <img src="cm.jpg" style="height: 300px; width: 300px; padding-left:30px; padding-right: 20px;"></a>
+            <a href="kesari.html">
+             <img  src="ks.jpg"style="height: 300px; width: 300px; padding-left:30px; padding-right: 10px;"></a>
+            
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

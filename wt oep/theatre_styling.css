@@ -1,0 +1,19 @@
+table, td{
+
+    width: 70%;
+     border-collapse: separate;
+    table-layout: fixed;
+    height: 150%;
+}
+.seats{
+    position: absolute;
+    left: 290px;
+    margin: 5px;
+    padding: 10px;
+}
+#screen{
+vertical-align: middle;
+    padding-left: 190px;
+    width: 90%;
+    
+}

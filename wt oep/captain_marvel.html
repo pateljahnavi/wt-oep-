@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Captain Marvel</title>
+    <link rel="stylesheet" type="text/css" href="cssfile.css">
+    <link rel="stylesheet" type="text/css" href="styling_header.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+<body style="background-color:lightgray;width: 100%;">
+   
+    <f1><center><font size="30"><b>CAPTAIN MARVEL(ENGLISH)</b></font></center></f1>
+
+    <br>
+    <img src="cmposter.jpg" alt="Captain_Mavel" width="850" height="450">
+    <br>
+    <center>
+        <table>
+            <tr>
+                <th><button class="button button1">Action</button></th>
+                <th><button class="button button1">Adventure</button></th>
+                <th><button class="button button1">Sci-Fi</button></th>
+            </tr>
+        </table>
+        <h3><b>Summary</b></h3>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Z1BCujX3pw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+        <pre><h3>
+        <i>Time: 2 hr 04 min</i>
+
+    Set in the 1990s, Marvel Studios` "Captain Marvel" is an all-new adventure from a previously unseen
+    period in the history of the Marvel Cinematic Universe that follows the journey of Carol Danvers as
+    she becomes one of the universe`s most powerful heroes. While a galactic war between two alien races 
+    reaches Earth, Danvers finds herself and a small cadre of allies at the center of the maelstrom.</h3></pre>
+
+        <h3><b>Cast & Crew</b></h3>
+        <br>
+
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="cm_cast1.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_cast2.jpg" style="width:80%" height="45%>
+            <img class="mySlides" src="cm_cast3.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_cast4.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_crew1.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_crew2.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_crew3.jpg" style="width:80%" height="45%">
+            <img class="mySlides" src="cm_crew4.jpg" style="width:80%" height="45%">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        <br>
+        <br>
+
+        <button onclick="document.getElementById('id01').style.display='block'" class="book button2">Book Tickets</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+       <p><h3>How many seats?</h3></p>
+     <select>
+     <option value="1">1</option>  
+      <option value="2">2</option>  
+   <option value="3">3</option>  
+<option value="4">4</option>  
+     <option value="5">5</option>  
+      <option value="6">6</option>  
+<option value="7">7</option> 
+<option value="8">8</option>  
+<option value="9">9</option>  
+<option value="10">10</option>  
+                   </select><br><br><br>
+<button onclick="theatre.html" class="book button2">Submit</button>
+      </div>
+    </div>
+  </div>
+        <br>
+        <br>
+
+    </center>
+
+</body>
+</html>

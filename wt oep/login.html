@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Login</title>
+            <link rel="stylesheet" type="text/css" href="login.css">
+             <link rel="stylesheet" type="text/css" href="styling_header.css">
+
+    </head>
+    <body style="line-height: 2.0;
+    background-color: lightgray;">
+        <header>
+    <div class="container">
+        <div id="name">
+           <h2>bookItHere</h2> 
+        </div>
+        <div id="search">
+        <form>
+            
+                    <input type="text" id="fname" placeholder="Search for your favourite movies">
+                   <input type="button" value="Search" id="bname">
+        </form>
+        </div>
+<div id="user">
+<a href="signup.html" target="_self">Sign up</a>&nbsp;/
+<a href="login.html">Sign-in</a>
+</div>  
+        <nav>
+            <ul>
+                <li><a href="bookItHere.html">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<form action="action_page.php" class="form">
+  <div class="container">
+    <h1>Login</h1>
+    <p>Fill in this form login to your account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+     
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+  
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="loginbtn">Login</button>
+    </div>
+  </div>
+</form> 
+</body>
+</html>
